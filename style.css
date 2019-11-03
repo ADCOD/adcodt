@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu{
+    width: 300Px;
+    border-radius: 8Px;
+    overflow: hidden;
+}
+.item{
+    boreder-top: 1Px Solid #2980b9;
+    Overflow: hidden;
+}
+.btn{
+    display: Black;
+    padding: 16Px 30px;
+    Background: #3498db;
+    color: White;
+    Position: relative;
+}
+.btn:before{
+    content: "";
+    Position: absolute;
+    width: 19Px;
+    height: 19Px;
+    Background: #3498db;
+    left: 20Px;
+    bottom: -7Px;
+    transform: rotate(45deg);
+}
+.btn i{
+    margin-right: 10px;
+}
+.smenu {
+    background: #333;
+    Overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+.smenu a{
+    Display: block;
+    padding: 26Px 36Px;
+    Color: White;
+    font-size: 14Px;
+    margin: 9Px 0;
+    Position: relative;
+}
+.smenu a:before{
+    content: "";
+    position: absolute;
+    Width: 8Px;
+    height: 100%;
+    background: #43988db;
+    Left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+.smenu a:hover:before{
+    opacity: 1;
+}
+.item:target .smenu{
+    max-height: 10em;
+}
